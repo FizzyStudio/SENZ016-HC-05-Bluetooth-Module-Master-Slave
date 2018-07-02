@@ -6,8 +6,8 @@
 
 > `中文` 请参考 [`这里`](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README_CN.md)
 
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016——Front.jpg "SENZ016_Front")
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016——Back.jpg "SENZ016_Back")
+![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Front.jpg "SENZ016_Front")
+![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Back.jpg "SENZ016_Back")
  
 
 ### 产品介绍
