@@ -6,7 +6,8 @@
 
 > For `Chinese`, please click [`here.`](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README_CN.md)
 
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016.jpg "SENZ016")
+![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016——Front.jpg "SENZ016_Front")
+![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016——Back.jpg "SENZ016_Back")
 
 
 ### Introduction
