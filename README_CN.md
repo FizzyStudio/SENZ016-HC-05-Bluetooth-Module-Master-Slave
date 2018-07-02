@@ -51,34 +51,37 @@
 
 ### 示例代码
 
-	//用Arduino配置蓝牙AT指令
-	#define AT 2
-	#define LED 13
-	void setup()
-	{
-	       pinMode(LED,OUTPUT);
-	       pinMode(AT,OUTPUT);
-	       digitalWrite(AT,HIGH);
-	       Serial.begin(38400);//这里应该和你的模块通信波特率一致
-	       delay(100);
-	       Serial.println("AT");
-	       delay(100);
-	       Serial.println("AT+NAME=OPENJUMPER-Bluetooth");//命名模块名
-	       delay(100);
-	       Serial.println("AT+ROLE=0");//设置主从模式：0从机，1主机
-	       delay(100);
-	       Serial.println("AT+PSWD=1234");//设置配对密码，如1234
-	       delay(100);
-	       Serial.println("AT+UART=9600,0,0");//设置波特率9600，停止位1，校验位无
-	       delay(100);
-	       Serial.println("AT+RMAAD");//清空配对列表
+> Use the Arduino as the software serial in AT mode
+
+	/***************
+	
+	HC-05 pin connection:
+		TXD->10, RXD->11, VCC->+5V, GND->GND, EN NC, STATE NC
+
+	AT mode:
+		Step1: shut down the power of HC-05;
+		Step2: keep pressing the black button;
+		Step3: power the HC-05 and check the red LED. It's OK if blinks at 1HZ;
+
+	****************/
+
+	#include <SoftwareSerial.h>
+	SoftwareSerial BT(10,11);    //define pin10 as RX, pin11 as TX; 
+
+	void setup() {
+	  Serial.begin(38400);
+	  Serial.println("hd");
+	  BT.begin(38400);
 	}
-	void loop()
-	{
-	       digitalWrite(LED, HIGH);
-	       delay(500);
-	       digitalWrite(LED, LOW);
-	       delay(500);
+
+	void loop() {
+	  // put your main code here, to run repeatedly:
+	  if (Serial.available()){
+	    BT.write(Serial.read());
+	  }
+	  if (BT.available()){
+	    Serial.write(BT.read());
+	  }
 	}
 
 

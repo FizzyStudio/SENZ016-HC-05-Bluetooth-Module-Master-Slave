@@ -33,23 +33,16 @@
 
 ### Tutorial
 
-#### Wire Definition
+#### Pin Definition
 
 |Sensor pin|Ardunio Pin|Function Description|
 |-|:-:|-|
-|VCC|+3.3~5V|Power|
+|VCC|+3.6~6V|Power shouldn't be higher than 7V|
 |GND|GND||
-|VO|-|Adjust the contrast ratio|
-|RS(CS)|H/L|Parallel Mode: RS="H",  data signal, RS="L",  command signal; Serial Mode: CS: chip signal|
-|R/W(SID)|H/L|Parallel Mode: R/W="H", write data, R/W="L", read data; Serial Mode: SID: data interface|
-|E(CLK)|H/L|Parallel Mode: Enable signal; Serial Mode: clock signal|
-|DB0~DB7|H/L|Data0-7|
-|PSB|H/L|PSB="H", Parallel Mode; PSB="L", Serial Mode|
-|NC|-||
-|RST|H/L|RST="L", Reset|
-|VOUT|-||
-|BLA|-|Back LED anode, +5V|
-|BLK|-|Back LED kathode, 0V|
+|EN|H/L|H:Enable signal for AT mode|
+|RXD|TX||
+|TXD|RX||
+|STATE|-|Output "H/L" digital level, Connected is "H", Unconnected is "L"|
 
 
 ![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_pin.jpg "Pin Definition") 
@@ -61,36 +54,39 @@
 
 #### Sample Code
 
+> Use the Arduino as the software serial in AT mode
 
-	//Set Bluetooth AT mode by Arduino
-	#define EN 2
-	#define LED 13
-	void setup()
-	{
-	       pinMode(LED,OUTPUT);
-	       pinMode(EN,OUTPUT);
-	       digitalWrite(EN,HIGH);
-	       Serial.begin(38400);//here the number should be concident with your module's communication Baud rate
-	       delay(100);
-	       Serial.println("AT");
-	       delay(100);
-	       Serial.println("AT+NAME=OPENJUMPER-Bluetooth");//Rename the module
-	       delay(100);
-	       Serial.println("AT+ROLE=0");//Set the Master/Slave mode, 0-Slave, 1-Master
-	       delay(100);
-	       Serial.println("AT+PSWD=1234");//Set the password such as 1234
-	       delay(100);
-	       Serial.println("AT+UART=9600,0,0");//Set Baud rate as 9600, 1 stop bit, 0 check bit
-	       delay(100);
-	       Serial.println("AT+RMAAD");//Clear the connect list
+	/***************
+	
+	HC-05 pin connection:
+		TXD->10, RXD->11, VCC->+5V, GND->GND, EN NC, STATE NC
+
+	AT mode:
+		Step1: shut down the power of HC-05;
+		Step2: keep pressing the black button;
+		Step3: power the HC-05 and check the red LED. It's OK if blinks at 1HZ;
+
+	****************/
+
+	#include <SoftwareSerial.h>
+	SoftwareSerial BT(10,11);    //define pin10 as RX, pin11 as TX; 
+
+	void setup() {
+	  Serial.begin(38400);
+	  Serial.println("hd");
+	  BT.begin(38400);
 	}
-	void loop()
-	{
-	       digitalWrite(LED, HIGH);
-	       delay(500);
-	       digitalWrite(LED, LOW);
-	       delay(500);
+
+	void loop() {
+	  // put your main code here, to run repeatedly:
+	  if (Serial.available()){
+	    BT.write(Serial.read());
+	  }
+	  if (BT.available()){
+	    Serial.write(BT.read());
+	  }
 	}
+
 
 
 ### Purchasing [*SENZ016-HC-05-Bluetooth-Module-Master-Slave*](https://www.ebay.com/).
