@@ -90,4 +90,4 @@
 
 
 
-### Purchasing [*SENZ016-HC-05-Bluetooth-Module-Master-Slave*](https://www.ebay.com/).
+### Purchasing [*SENZ016-HC-05-Bluetooth-Module-Master-Slave*](https://www.ebay.com/itm/263792837224?ssPageName=STRK:MESELX:IT&_trksid=p3984.m1558.l2649).
