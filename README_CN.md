@@ -86,4 +86,4 @@
 	}
 
 
-### 购买[*SENZ016 HC-05 主从一体蓝牙模块*](https://www.ebay.com/).
+### 购买[*SENZ016 HC-05 主从一体蓝牙模块*](https://www.ebay.com/itm/263792837224?ssPageName=STRK:MESELX:IT&_trksid=p3984.m1558.l2649).
