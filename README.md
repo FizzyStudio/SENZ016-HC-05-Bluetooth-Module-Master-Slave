@@ -2,12 +2,12 @@
 
 ###### Translation
 
-> For `English`, please click [`here.`](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README.md)
+> For `English`, please click [`here.`](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README.md)
 
-> For `Chinese`, please click [`here.`](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README_CN.md)
+> For `Chinese`, please click [`here.`](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README_CN.md)
 
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Front.jpg "SENZ016_Front")
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Back.jpg "SENZ016_Back")
+![](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Front.jpg "SENZ016_Front")
+![](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Back.jpg "SENZ016_Back")
 
 
 ### Introduction
@@ -46,11 +46,11 @@
 |STATE|-|Output "H/L" digital level, Connected is "H", Unconnected is "L"|
 
 
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_pin.jpg "Pin Definition") 
+![](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_pin.jpg "Pin Definition") 
 
 #### Connecting Diagram
 
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_connect.png "Connecting Diagram") 
+![](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_connect.png "Connecting Diagram") 
 
 
 #### Sample Code
