@@ -2,12 +2,12 @@
 
 ###### 翻译
 
-> `英文` 请参考 [`这里`](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README.md)
+> `英文` 请参考 [`这里`](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README.md)
 
-> `中文` 请参考 [`这里`](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README_CN.md)
+> `中文` 请参考 [`这里`](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/README_CN.md)
 
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Front.jpg "SENZ016_Front")
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Back.jpg "SENZ016_Back")
+![](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Front.jpg "SENZ016_Front")
+![](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_Back.jpg "SENZ016_Back")
  
 
 ### 产品介绍
@@ -42,12 +42,12 @@
 |TXD|RX||
 |STATE|-|Output "H/L" digital level, Connected is "H", Unconnected is "L"|
 
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_pin.jpg "引脚定义") 
+![](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_pin.jpg "引脚定义") 
 
 
 #### 连线图
 
-![](https://github.com/njustcjj/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_connect.png "连线图") 
+![](https://github.com/FizzyStudio/SENZ016-HC-05-Bluetooth-Module-Master-Slave/blob/master/pic/SENZ016_connect.png "连线图") 
 
 
 ### 示例代码
